@@ -1,0 +1,403 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.cabezal{
+    background-color: #273A22;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.contenedor1{
+    display: block;
+    justify-content: baseline;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.logo a img{
+    width: 5rem;
+    margin: 0 2rem;
+}
+
+.logo .ligas{
+    padding: 2rem;
+}
+
+.logo .ligas a{
+    text-decoration: none;
+    margin: 2rem;
+    font-size: 2rem;
+    color: #797979;
+}
+
+.contenedor{
+    display: flex;
+    margin: 1.5rem;
+}
+
+.boton{
+    display: block;
+    color: black;
+    background-color: #c4c4c4;
+    border-radius: .75rem;
+    margin-top: .5rem;
+    margin-left: 2rem;
+    padding: .5rem 2rem;
+    text-decoration: none;
+}
+
+.carrito p{
+    color: #202020;
+}
+
+.icono p{
+    position: absolute;
+    font-size: 2rem;
+    margin: .5rem 0 0 -1rem;
+    color: #eeeeee;
+}
+
+.cantidad{
+    position: relative;
+    display: block;
+    background-color: #ff0000;
+    border-radius: 50%;
+    font-family: 'Roboto', sans-serif!important;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+    margin-top: -1rem;
+    margin-left: .5rem;
+}
+
+.cantidad p{
+    font-size: 1rem;
+    margin-left: -.125rem;
+}
+
+.contenido{
+    margin: 1rem .5rem;
+}
+
+.imagen1{
+    background-image: url('../img/fondoCamuflage.png');
+    color: #f3f3f3;
+    padding: 1rem;
+}
+
+.imagen1 h2{
+    text-align: center;
+}
+
+.imagen1 p{
+    padding: 0 2rem 3rem 2rem;
+}
+
+.imagen2{
+    display: flex;
+    padding: 1rem;
+    color: #202020;
+    justify-content: space-between;
+    flex: 0 0 auto;
+}
+
+.imagen2 img, .ubicacion img{
+    display: block;
+    width: 20%;
+}
+
+.contenedorInformacion{
+    display: block;
+}
+
+.imagen2 .contenedorInformacion{
+    padding-right: 1rem;
+}
+
+.ubicacion{
+    display: flex;
+}
+
+.ubicacion .contenedorInformacion{
+    margin-left: 2rem;
+}
+
+.ubicacion img{
+    width: 25%;
+}
+
+
+/** Pasteles **/
+
+.encabezado{
+    text-align: center;
+}
+
+.contenedor2{
+    display: flex;    
+}
+
+.subcontenedor1{
+    max-width: 26rem;
+    margin:  0 2rem;
+}
+
+.subcontenedor1 img{
+    width: 25rem;
+}
+
+.subcontenedor1 h3{
+    font-size: 2.65rem;
+    text-align: center;
+}
+
+/** Checkout **/
+.checkout{
+    padding-bottom: 2rem;
+}
+
+.checkout h2{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.contenedorBoton{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorBoton a{
+    display: block;
+    width: 20rem;
+}
+
+.contenedor.checkout{
+    justify-content: center;
+    margin-top: 0;
+}
+
+.contenedor3{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+}
+
+.subcontenedor2{
+    display: flex;
+    padding: 1rem 2rem;
+}
+
+.datos{
+    width: 60%;
+}
+
+.precio, .acciones {
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.precio h3, .datos h3{
+    font-size: 2rem;
+}
+
+.precio h3{
+    margin: 1rem 0 0 0;
+    padding: 0;
+}
+
+.datos h3{
+    margin: 0;
+    padding: 0;
+}
+
+.acciones h4{
+    font-size: 3rem;
+    margin: 0;
+    display: flex;
+}
+
+.acciones h4 a i{
+    display: block;
+    padding: 0 5rem;
+    text-decoration: none;
+    color: #6E8D67;
+}
+
+.item1, .item2, .item3, .item4,
+.pastel1, .pastel2, .pastel3, .pastel4,
+.adorno1, .adorno2, .adorno3, .adorno4{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item1{
+    background-image: url("../img/image\ 5.png");
+}
+
+.item1 h3, .item1 p, .item2 h3, .item2 p{
+    color: #f3f3f3;
+}
+
+.item2{
+    background-image: url("../img/image\ 11.png");
+}
+
+.item3{
+    background-image: url('../img/image\ 8.png');
+}
+
+.item3 h3, .item3 p{
+    color: #7f7f7f;
+}
+
+.item4{
+    background-image: url('../img/image\ 10.png');
+}
+
+
+/** Formulario **/
+
+.contenedor.formularioEnvio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formulario{
+    display: block;
+}
+
+.contenedorFormulario{
+    display: flex;
+}
+
+.contenedorFormulario input{
+    width: 25rem;
+    margin: 1rem 1.5rem;
+    border-radius: .5rem;
+}
+
+.casa input{
+    width: 10.85rem;
+}
+
+/** Dashboard **/
+.dashboard{
+    display: flex;
+    flex-direction: column;
+}
+
+.inventario, .pedidos{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor4{
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+    width: 30rem;
+}
+
+.subcontenedor3{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.subcontenedor3 h3{
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.pastel1{
+    background-image: url('../img/image\ 5.png');
+    color: #6E8D67;
+}
+
+.pastel2{
+    background-image: url('../img/image\ 6.png');
+}
+
+.pastel3{
+    background-image: url('../img/image\ 8.png');
+    color: #797979;
+}
+
+.pastel4{
+    background-image: url('../img/image\ 7.png');
+}
+
+.pastel4 h3{
+    margin: 0;
+    padding: .65rem 0;
+}
+
+.adorno1{
+    background-image: url('../img/image\ 9.png');
+}
+
+.adorno2{
+    background-image: url('../img/image\ 10.png');
+}
+
+.adorno3{
+    background-image: url('../img/image\ 12.png');
+}
+
+.adorno4{
+    background-image: url('../img/image\ 11.png');
+    color: #797979;
+}
+
+.pedidos table{
+    background-color: #c4c4c4;
+    border-radius: .5rem;
+}
+
+.pedidos table tr{
+    border: .125rem solid;
+}
+
+table{
+    border-collapse: collapse;
+    border-radius: .5rem;
+}
+
+.pedidos table th, td{
+    padding: 0 5rem;
+    border: .125rem solid;
+    margin: 0;
+}
